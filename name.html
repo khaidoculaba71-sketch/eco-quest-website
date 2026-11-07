@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Name | ECO QUEST</title>
+
+    <link rel="stylesheet" href="name.css">
+</head>
+
+<body>
+
+    <main class="screen">
+
+        <div class="artwork">
+
+            <!-- Name Screen Background -->
+            <img 
+                src="images/name-screen.png" 
+                alt="Pick a name, adventurer"
+            >
+
+            <!-- Nickname Input -->
+            <input
+                type="text"
+                id="playerName"
+                maxlength="16"
+                placeholder="Enter your nickname"
+                autocomplete="off"
+            >
+
+            <!-- Next Step Button -->
+            <button
+                class="next-button"
+                type="button"
+                onclick="nextStep()"
+                aria-label="Next Step">
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="name.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: min(100vw, 177.794vh);
+    aspect-ratio: 6250 / 3517;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-screen img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.mission-button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+/* Temporary positions */
+.mission-1 {
+    top: 13%;
+    left: 1%;
+    width: 23.25%;
+    height: 69%;
+}
+
+.mission-2 {
+    top: 33%;
+    left: 25%;
+    width: 50%;
+    height: 49%;
+}
+
+.mission-3 {
+    top: 13%;
+    left: 76%;
+    width: 23.25%;
+    height: 69%;
+}

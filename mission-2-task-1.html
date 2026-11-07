@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Climate Detective | ECO QUEST</title>
+
+    <link rel="stylesheet" href="./mission-2-task-1.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <!-- INITIAL BACKGROUND -->
+        <img
+            src="images/54.png"
+            class="background"
+            id="choices-image"
+            alt="Climate Detective"
+            style="display: block;"
+        >
+
+        <!-- MYSTERY SCREENS -->
+        <img src="./images/55.png" class="background" id="mystery-1" alt="Mystery 1">
+        <img src="./images/59.png" class="background" id="mystery-2" alt="Mystery 2">
+        <img src="./images/63.png" class="background" id="mystery-3" alt="Mystery 3">
+        <img src="./images/67.png" class="background" id="mystery-4" alt="Mystery 4">
+        <img src="./images/71.png" class="background" id="mystery-5" alt="Mystery 5">
+
+        <!-- CORRECT SCREENS -->
+        <img src="./images/56.png" class="background" id="correct-1" alt="Correct 1">
+        <img src="./images/60.png" class="background" id="correct-2" alt="Correct 2">
+        <img src="./images/64.png" class="background" id="correct-3" alt="Correct 3">
+        <img src="./images/68.png" class="background" id="correct-4" alt="Correct 4">
+        <img src="./images/72.png" class="background" id="correct-5" alt="Correct 5">
+
+        <!-- INCORRECT SCREENS -->
+        <img src="./images/57.png" class="background" id="incorrect-1" alt="Incorrect 1">
+        <img src="./images/61.png" class="background" id="incorrect-2" alt="Incorrect 2">
+        <img src="./images/65.png" class="background" id="incorrect-3" alt="Incorrect 3">
+        <img src="./images/69.png" class="background" id="incorrect-4" alt="Incorrect 4">
+        <img src="./images/73.png" class="background" id="incorrect-5" alt="Incorrect 5">
+
+        <!-- PROGRESS SCREENS -->
+        <img src="./images/58.png" class="background" id="choices-2" alt="Choices 2">
+        <img src="./images/62.png" class="background" id="choices-3" alt="Choices 3">
+        <img src="./images/66.png" class="background" id="choices-4" alt="Choices 4">
+        <img src="./images/70.png" class="background" id="choices-5" alt="Choices 5">
+
+        <!-- FINAL SCREEN -->
+        <img src="./images/74.png" class="background" id="final-choices" alt="Mission completed">
+
+        <!-- SELECTED CHARACTER -->
+        <img
+            src="./images/74.png"
+            class="character"
+            id="flint-character"
+            alt="Flint"
+        >
+
+        <img
+            src="./images/75.png"
+            class="character"
+            id="fern-character"
+            alt="Fern"
+        >
+
+        <!-- QUESTION BUTTONS -->
+        <button type="button" class="choice-box" id="choice-1" onclick="openCard(1)" aria-label="Question 1"></button>
+        <button type="button" class="choice-box" id="choice-2" onclick="openCard(2)" aria-label="Question 2"></button>
+        <button type="button" class="choice-box" id="choice-3" onclick="openCard(3)" aria-label="Question 3"></button>
+        <button type="button" class="choice-box" id="choice-4" onclick="openCard(4)" aria-label="Question 4"></button>
+        <button type="button" class="choice-box" id="choice-5" onclick="openCard(5)" aria-label="Question 5"></button>
+
+        <!-- ANSWER INPUT -->
+        <div class="answer-container" id="answer-container">
+
+            <input
+                type="text"
+                id="player-answer"
+                placeholder="Enter your answer..."
+                autocomplete="off"
+            >
+
+            <button type="button" onclick="checkAnswer()">
+                SUBMIT
+            </button>
+
+        </div>
+
+        <!-- NEXT BUTTON -->
+        <button
+            type="button"
+            id="next-mission-button"
+            onclick="goToMission3()"
+            aria-label="Next mission">
+        </button>
+
+    </main>
+
+    <script src="./mission-2-task-1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: min(100vw, 177.794vh);
+    aspect-ratio: 6250 / 3517;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: fill;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+}
+/* HIGHLAND CHRONICLES CLICKABLE BOX */
+
+.mission-button {
+    position: absolute;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.highland-chronicles {
+    top: 58%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}

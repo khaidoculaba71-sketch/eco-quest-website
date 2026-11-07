@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: min(100vw, 177.794vh);
+    aspect-ratio: 6250 / 3517;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: fill;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.click-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 0;
+    font-weight: bold;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 20;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+.box-1 {
+    top: 58%;
+    left: 53%;
+    background: transparent;
+    width: 14%;
+    height: 35%;
+}
+
+.box-2 {
+    top: 85.5%;
+    left: 67%;
+    background: transparent;
+    width: 30%;
+    height: 10%;
+}
+
+.box-3 {
+    top: 86%;
+    left: 35%;
+    background: transparent;
+    width: 20%;
+    height: 15%;
+}
+
+.box-4 {
+    top: 66%;
+    left: 68%;
+    background: transparent;
+    width: 10%;
+    height: 15%;
+}
+
+.box-5 {
+    top: 23%;
+    left: 43%;
+    background: transparent;
+    width: 20%;
+    height: 20%;
+}
+
+/* ANSWER OVERLAY */
+
+.answer-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+}
+
+.answer-overlay img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.answer-overlay.hidden {
+    display: none !important;
+}
+
+.background {
+    pointer-events: none;
+}
+
+.click-box:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+/* PLAYER INPUT */
+
+.player-answer {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+    width: 350px;
+    height: 45px;
+
+    background: white;
+    border: transparent;
+    color: black;
+    font-size: 20px;
+
+    z-index: 100;
+    pointer-events: auto;
+    cursor: text;
+}
+
+.player-answer::placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+/* SUBMIT BUTTON */
+
+.submit-button {
+    position: absolute;
+    top: 63%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 128px;
+    height: 47px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: transparent;
+    cursor: pointer;
+    z-index: 15;
+}
+
+/* CLOSE BUTTON */
+
+.close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #c0392b;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 16;
+}
+
+/* NEXT MISSION BUTTON */
+
+#next-mission-button {
+    display: none;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    width: 15%;
+    height: 10%;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    z-index: 30;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Forest Residents | ECO QUEST</title>
+    <link rel="stylesheet" href="mission-1-task-1.css">
+</head>
+<body>
+
+    <main class="game-screen">
+
+        <img src="images/tree.png"
+             class="background"
+             alt="Five forest organism silhouettes">
+
+        <button class="click-box box-1" onclick="openAnswerBox('tree')">1</button>
+        <button class="click-box box-2" onclick="openAnswerBox('grass')">2</button>
+        <button class="click-box box-3" onclick="openAnswerBox('deer')">3</button>
+        <button class="click-box box-4" onclick="openAnswerBox('rabbit')">4</button>
+        <button class="click-box box-5" onclick="openAnswerBox('bird')">5</button>
+
+        <div id="answer-overlay" class="answer-overlay hidden">
+
+            <img id="answer-image" src="" alt="Answer box">
+            <button
+                id="next-mission-button"
+                onclick="goToMission2()">
+            </button>
+
+            <input
+                type="text"
+                id="player-answer"
+                class="player-answer"
+                placeholder="Enter your answer..."
+                autocomplete="off"
+            >
+
+            <button
+                class="submit-button"
+                onclick="checkAnswer()">
+                SUBMIT
+            </button>
+
+            <button class="close-button" onclick="closeAnswerBox()">X</button>
+
+        </div>
+
+    </main>
+
+    <script src="mission-1-task-1.js"></script>
+
+</body>
+</html>

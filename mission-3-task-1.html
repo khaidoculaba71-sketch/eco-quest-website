@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Detective | ECO QUEST</title>
+
+    <link rel="stylesheet" href="mission-3-task-1.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <!-- INITIAL CHOICES -->
+        <img src="images/81.png" class="background" id="choices-image" alt="Weather Detective choices">
+
+        <!-- NUMBERED CLICKABLE BOXES -->
+        <button type="button" class="choice-box" id="choice-1" onclick="openCard(1)">1</button>
+        <button type="button" class="choice-box" id="choice-2" onclick="openCard(2)">2</button>
+        <button type="button" class="choice-box" id="choice-3" onclick="openCard(3)">3</button>
+        <button type="button" class="choice-box" id="choice-4" onclick="openCard(4)">4</button>
+        <button type="button" class="choice-box" id="choice-5" onclick="openCard(5)">5</button>
+
+        <!-- MYSTERY SCREENS -->
+        <img src="images/82.png" class="background" id="mystery-1">
+        <img src="images/86.png" class="background" id="mystery-2">
+        <img src="images/90.png" class="background" id="mystery-3">
+        <img src="images/94.png" class="background" id="mystery-4">
+        <img src="images/98.png" class="background" id="mystery-5">
+
+        <!-- CORRECT ANSWER SCREENS -->
+        <img src="images/83.png" class="background" id="correct-1">
+        <img src="images/87.png" class="background" id="correct-2">
+        <img src="images/91.png" class="background" id="correct-3">
+        <img src="images/95.png" class="background" id="correct-4">
+        <img src="images/99.png" class="background" id="correct-5">
+
+        <!-- INCORRECT ANSWER SCREENS -->
+        <img src="images/84.png" class="background" id="incorrect-1">
+        <img src="images/88.png" class="background" id="incorrect-2">
+        <img src="images/92.png" class="background" id="incorrect-3">
+        <img src="images/96.png" class="background" id="incorrect-4">
+        <img src="images/100.png" class="background" id="incorrect-5">
+
+        <!-- UPDATED CHOICES SCREENS -->
+        <img src="images/85.png" class="background" id="choices-2">
+        <img src="images/89.png" class="background" id="choices-3">
+        <img src="images/93.png" class="background" id="choices-4">
+        <img src="images/97.png" class="background" id="choices-5">
+
+        <!-- ANSWER INPUT -->
+        <div class="answer-container" id="answer-container">
+            <input
+                type="text"
+                id="player-answer"
+                placeholder="Enter your answer..."
+                autocomplete="off"
+            >
+
+            <button type="button" onclick="checkAnswer()">
+                SUBMIT
+            </button>
+        </div>
+
+        <!-- NEXT BUTTON: 99.png TO JOURNEY COMPLETE -->
+        <button
+            type="button"
+            id="next-mission-button"
+            onclick="goJourneyComplete()">
+            NEXT
+        </button>
+
+    </main>
+
+    <script src="mission-3-task-1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+/* START ADVENTURE BUTTON */
+.next-button {
+    position: absolute;
+    top: 91.5%;
+    left: 50%;
+    width: 80%;
+    height: 15%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    z-index: 20;
+}

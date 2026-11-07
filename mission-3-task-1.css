@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: min(100vw, 177.794vh);
+    aspect-ratio: 6250 / 3517;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    object-position: center;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* CLICKABLE CHOICE BOXES */
+
+.choice-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 41%;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+}
+
+/* NUMBER 1 */
+
+#choice-1 {
+    top: 35%;
+    left: 22%;
+}
+
+/* NUMBER 2 */
+
+#choice-2 {
+    top: 35%;
+    left: 47%;
+}
+
+/* NUMBER 3 */
+
+#choice-3 {
+    top: 35%;
+    left: 73%;
+}
+
+/* NUMBER 4 */
+
+#choice-4 {
+    top: 78%;
+    left: 37%;
+}
+
+/* NUMBER 5 */
+
+#choice-5 {
+    top: 78%;
+    left: 63%;
+}
+
+/* ANSWER CONTAINER */
+
+.answer-container {
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.answer-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background: tan;
+    border: 2px solid white;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.answer-container input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* SUBMIT BUTTON */
+
+.answer-container button {
+    padding: 10px 25px;
+    background: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* BUTTON HOVER EFFECT */
+
+.choice-box:hover {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.answer-container button:hover {
+    background: transparent;
+}
+
+/* NEXT BUTTON */
+
+#next-mission-button {
+    display: none;
+    position: absolute;
+    top: 93%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 12%;
+    z-index: 9999;
+    background: transparent !important;
+    border: none !important;
+    color: transparent;
+    cursor: pointer;
+}

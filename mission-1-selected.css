@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #183E32;
+}
+
+.game-screen {
+    position: fixed;
+    width: min(100vw, 177.794vh);
+    aspect-ratio: 6250 / 3517;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-screen img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.start-button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 12%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+}
